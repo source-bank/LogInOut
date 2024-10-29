@@ -1,0 +1,7 @@
+﻿@{
+    if (string.IsNullOrEmpty(Context.Session.GetString("UserId")))
+    {
+        Context.Response.Redirect("/Home/LogIn");//로그인이 안되어 있으면 로그인 페이지로 이동
+    }
+}
+여기는 로그인 되어 있다면 접근할 수 있는 페이지입니다.
